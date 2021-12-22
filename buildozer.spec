@@ -4,7 +4,7 @@
 title = Copilka
 
 # (str) Package name
-package.name = Copilka0.1
+package.name = copilka.0.1
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test_one
