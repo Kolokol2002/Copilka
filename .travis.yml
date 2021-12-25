@@ -25,8 +25,8 @@ install:
   - export PATH=$PATH:~/.local/bin/
   - ls -l
   - echo "TODO COMPILE 32bit"
-  - yes | buildozer android debug
   - travis_wait 30 mvn install
+  - yes | buildozer android debug
   - ls -la
   - ls bin/ -l
   - gem install dpl --pre
