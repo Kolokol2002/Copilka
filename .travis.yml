@@ -6,6 +6,7 @@ python:
   - 3.8
 
 install:
+  - travis_wait 30 mvn install
   - sudo apt -y install python3-distutils
   - sudo apt -y install python3-pip
   - sudo apt install -y git
