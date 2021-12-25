@@ -6,7 +6,6 @@ python:
   - 3.8
 
 install:
-  - travis_wait 30 mvn install
   - sudo apt -y install python3-distutils
   - sudo apt -y install python3-pip
   - sudo apt install -y git
@@ -27,6 +26,7 @@ install:
   - ls -l
   - echo "TODO COMPILE 32bit"
   - yes | buildozer android debug
+  - travis_wait 30 mvn install
   - ls -la
   - ls bin/ -l
   - gem install dpl --pre
